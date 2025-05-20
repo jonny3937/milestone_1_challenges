@@ -57,11 +57,55 @@ console.log (result2); // false
 // end of challenge 4
 
 // challenge 5: Can I Drive
+function canDrive(name, age) {
+    if (age >= 18) {
+        console.log(name + " is old enough to drive");
+    } else {
+        console.log(name + " is not old enough to drive yet");
+    }
+}
+canDrive("Jane", 22);
+canDrive("June", 12);
+
+
+// end of challenge 5
+
+// challenge 6:  Check the largest number
+function findLargestNumber(num1, num2, num3) {
+    return Math.max(num1, num2, num3);
+}
+let largest = findLargestNumber(5, 9, 3);
+console.log('The largest number is: ');
+console.log (largest);
+let largest2 = findLargestNumber(1, 19, 0);
+console.log('The largest number is: ');
+console.log (largest2);
+// end of challenge 6
+
+// challenge 7:  bml calculate category
+
+function calculateBMI(weight, height) {
+    let bmi = weight / (height * height);
+    let category;
+
+    if (bmi < 18.5) {
+        category = "Underweight";
+    } else if (bmi >= 18.5 && bmi < 24.9) {
+        category = "Normal weight";
+    } else if (bmi >= 25 && bmi < 29.9) {
+        category = "Overweight";
+    } else {
+        category = "Obese";
+    }
+
+    return `Your BMI is ${bmi.toFixed(2)} ${category}.`;
+}
+
+console.log(calculateBMI(85, 1.8));  //Your BMI is 26.23 Overweight.
+console.log(calculateBMI(70, 1.75)); //Your BMI is 22.86 Normal weight.
+console.log(calculateBMI(50, 1));    //Your BMI is 50.00 Obese.
+// end of challenge 7
 
 
 
-
-
-
-
-//(  node milestone_1_challenges.js   ) //for my purpose of running my code 
+//( node milestone_1_challenges.js    ) //for my purpose of running my code 
