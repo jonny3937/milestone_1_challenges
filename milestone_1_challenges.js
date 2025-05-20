@@ -42,3 +42,26 @@ console.log (perimeter2);
 // end of perimeter of a rectangle challenge
 
 
+// challenge 4: Check whether a number is Negative
+function isNegative(num){
+    return num < 0;
+}
+let num = -5;
+let result = isNegative(num);
+console.log('Is the number negative? : ');
+console.log (result); // true
+let num2 = 5;
+let result2 = isNegative(num2);
+console.log('Is the number negative? : ');
+console.log (result2); // false
+// end of challenge 4
+
+// challenge 5: Can I Drive
+
+
+
+
+
+
+
+//(  node milestone_1_challenges.js   ) //for my purpose of running my code 
