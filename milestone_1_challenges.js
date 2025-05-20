@@ -179,8 +179,22 @@ function powerUp(num, times) {
     return result;
 }
 console.log(powerUp(2, 4)); //4 raised by 2 is 16
-
 // end of challenge 12
+
+// challenge 13:   Factorial Calculator
+function factorial(n) {
+    if (n === 0) {
+        return 1;
+    }
+    let result = 1;
+    for (let i = 1; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+console.log(factorial(2)); // is equal to 1 by2
+console.log(factorial(5)); // 1by2by3by4by5
+// end of challenge 13
 
 
 //( node milestone_1_challenges.js    ) //for my purpose of running my code 
