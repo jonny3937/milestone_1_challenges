@@ -66,8 +66,6 @@ function canDrive(name, age) {
 }
 canDrive("Jane", 22);
 canDrive("June", 12);
-
-
 // end of challenge 5
 
 // challenge 6:  Check the largest number
@@ -134,10 +132,10 @@ function fizzBuzzCheck(number) {
         return number.toString();
     }
 }
-console.log(fizzBuzzCheck(30)); 
-console.log(fizzBuzzCheck(3));  
-console.log(fizzBuzzCheck(5)); 
-console.log(fizzBuzzCheck(1));  
+console.log(fizzBuzzCheck(30)); //gave me fizbuzz
+console.log(fizzBuzzCheck(3));  //fizz
+console.log(fizzBuzzCheck(5)); //buzz
+console.log(fizzBuzzCheck(1));  // gave me 1
 // end of challenge 9
 
 // challenge 10: Perimeter of a shape;
@@ -153,4 +151,36 @@ function calcperimeter(shape, num) {
 }
 console.log(calcperimeter("s", 8)); //32
 console.log(calcperimeter("c", 3)); //18.84 
+
+// end of challenge 10 its great on loops
+
+// challenge 11: Sum of Even Numbers //using for loop is simplest way here
+function sumEvenNumbers(n) {
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+        if (i % 2 === 0) {
+            sum += i;
+        }
+    }
+    return sum;
+}
+console.log(sumEvenNumbers(9)); // here 2+4+6+8 is 20
+console.log(sumEvenNumbers(4)); // here 2+4 is 6
+// end of challenge 11     //i used for loop 
+
+// challenge 12: Multiply by Itself      //used for loop
+//its like usng the given number as the power
+
+function powerUp(num, times) {
+    let result = 1;
+    for (let i = 0; i < times; i++) {
+        result *= num;
+    }
+    return result;
+}
+console.log(powerUp(2, 4)); //4 raised by 2 is 16
+
+// end of challenge 12
+
+
 //( node milestone_1_challenges.js    ) //for my purpose of running my code 
