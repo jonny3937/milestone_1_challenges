@@ -169,7 +169,7 @@ console.log(sumEvenNumbers(4)); // here 2+4 is 6
 // end of challenge 11     //i used for loop 
 
 // challenge 12: Multiply by Itself      //used for loop
-//its like usng the given number as the power
+//its like usng the given number as the power^num
 
 function powerUp(num, times) {
     let result = 1;
@@ -196,5 +196,31 @@ console.log(factorial(2)); // is equal to 1 by2
 console.log(factorial(5)); // 1by2by3by4by5
 // end of challenge 13
 
+// challenge 14: Multiple Sum
+function sumMultiples(n, divisor) {
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+        if (i % divisor === 0) {
+            sum += i;
+        }
+    }
+    return sum;
+}
+console.log(sumMultiples(12, 3)); //it will add 3 , 6, 9, 12
+console.log(sumMultiples(4, 1)); //it will add 1, 2, 3, 4
+//the end of challenge 14
+
+//start challenge 15:  15. Sum of Digits
+function sumDigits(num) {
+    let sum = 0;
+    while (num > 0) {
+        sum += num % 10; // to add the last digit to the sum
+        num = Math.floor(num / 10); // to remove the last digit
+    }
+    return sum;
+}
+console.log(sumDigits(567));// this is to sum 5+6+7
+console.log(sumDigits(1234));// this is to sum 1+2+3+4
+//the end 
 
 //( node milestone_1_challenges.js    ) //for my purpose of running my code 
