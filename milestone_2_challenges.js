@@ -249,6 +249,17 @@ console.log(mostFrequent([10, 9, 9, 4, 6, 6, 9]));
 //end of challenge
 
 
+//added challenge 17 adding a new array in set of arrays
+function addArray(arr, newArr) {
+    arr.push(newArr);
+    return arr;
+}
+console.log(addArray([[1, 2], [3, 4]], [5, 6])); // [[1, 2], [3, 4], [5, 6]]
+console.log(addArray([[1, 2], [3, 4]], [7, 8])); // [[1, 2], [3, 4], [7, 8]]
+
+
+
+
 //node milestone_2_challenges.js
 
 
