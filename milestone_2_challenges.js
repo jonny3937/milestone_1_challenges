@@ -194,6 +194,59 @@ console.log(linearSearchAll([1, 2, 3, 4, 5, 3], 3));
 console.log(linearSearchAll([1, 2, 3, 4, 5], 6)); 
 // end of challenge 13
 
+//start of challenge 14  Count Occurrences
+function countOccurrences(arr) {
+    let occurrences = {};
+    for (let i = 0; i < arr.length; i++) {
+        if (occurrences[arr[i]]) {
+            occurrences[arr[i]]++;
+        } else {
+            occurrences[arr[i]] = 1;
+        }
+    }
+    return occurrences;
+}
+console.log(countOccurrences(["egg", "beer", "egg", "peas", "beer", "beer"]));
+//end of challenge 14
+
+// start of challenge 15  Remove Duplicates
+function removeDuplicates(arr) {
+    let uniqueArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (!uniqueArr.includes(arr[i])) {
+            uniqueArr.push(arr[i]);
+        }
+    }
+    return uniqueArr;
+}
+console.log(removeDuplicates([1, 2, 3, 4, 5, 1, 2, 3]));
+console.log(removeDuplicates(["egg", "beer", "egg", "peas", "beer", "beer"]));
+//end of challenge 15
+
+
+//start of challenge 16   Most Frequent
+function mostFrequent(arr) {
+    let occurrences = {};
+    let maxCount = 0;
+    let mostFrequentValue;
+
+    for (let i = 0; i < arr.length; i++) {
+        if (occurrences[arr[i]]) {
+            occurrences[arr[i]]++;
+        } else {
+            occurrences[arr[i]] = 1;
+        }
+
+        if (occurrences[arr[i]] > maxCount) {
+            maxCount = occurrences[arr[i]];
+            mostFrequentValue = arr[i];
+        }
+    }
+    return mostFrequentValue;
+}
+console.log(mostFrequent([10, 9, 9, 4, 6, 6, 9]));
+// i used controll statements data structures and loops
+//end of challenge
 
 
 //node milestone_2_challenges.js
