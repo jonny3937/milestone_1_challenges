@@ -224,3 +224,4 @@ console.log(sumDigits(1234));// this is to sum 1+2+3+4
 //the end 
 
 //( node milestone_1_challenges.js    ) //for my purpose of running my code 
+
