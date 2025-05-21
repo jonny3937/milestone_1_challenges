@@ -74,6 +74,36 @@ console.log(countProperties({ name: "michael", age: 18, city: "Nairobi" }));
 console.log(countProperties({ name: "lizz", age: 30, food: "minsed meat", county: "kisii" }));
 //the end of challenge 5
 
+//begining of challenge six , Filter by Length
+
+function filterByLength(arr, minLength) {
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].length >= minLength) {
+            result.push(arr[i]);
+        }
+    }
+    return result;
+}
+console.log(filterByLength(["fun", "badge", "draculla", "twist"], 4));
+//end of chalenge six
+
+//start of challenge 7 Sum of Even Numbers
+function sumEvenNumbers(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            sum += arr[i];
+        }
+    }
+    return sum;
+}
+console.log(sumEvenNumbers([10,11,12,13,14,15,16,17]));
+//the gitend of challenge 7
+
+
+
+
 //node milestone_2_challenges.js
 
 
