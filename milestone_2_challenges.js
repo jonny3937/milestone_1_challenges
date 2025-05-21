@@ -1,8 +1,4 @@
 //challenge 1 Sum of Positives
-// Write a function called sumOfPositives that takes an array of numbers and returns the sum of all the positive numbers in the array.
-
-// sumOfPositives([1, -3, 5, -2, 9, -8]
-// ); // 15
 function sumOfPositives(arr) {
     let sum = 0;
     for (let i = 0; i < arr.length; i++) {
@@ -254,8 +250,8 @@ function addArray(arr, newArr) {
     arr.push(newArr);
     return arr;
 }
-console.log(addArray([[1, 2], [3, 4]], [5, 6])); // [[1, 2], [3, 4], [5, 6]]
-console.log(addArray([[1, 2], [3, 4]], [7, 8])); // [[1, 2], [3, 4], [7, 8]]
+console.log(addArray([[1, 2], [3, 4]], [5, 6])); 
+console.log(addArray([[1, 2], [3, 4]], [7, 8]));
 
 
 
