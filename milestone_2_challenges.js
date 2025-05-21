@@ -165,6 +165,35 @@ console.log(linearSearch([1, 2, 3, 4, 5], 1));
 //end of challenge 11
 
 
+//start of challenge 12  Reverse Linear Search
+function reverseLinearSearch(arr, value) {
+    for (let i = arr.length - 1; i >= 0; i--) {
+        if (arr[i] === value) {
+            return i;
+        }
+    }
+    return -1;
+}
+console.log(reverseLinearSearch([1, 2, 3, 4, 5], 4));
+console.log(reverseLinearSearch([1, 2, 3, 4, 5], 5));
+console.log(reverseLinearSearch([1, 2, 3, 4, 5], 1));
+console.log(reverseLinearSearch([1, 2, 3, 4, 5], 6));
+//end of challenge 12
+
+//start of challenge 13   Linear Search All Indices
+function linearSearchAll(arr, value) {
+    let indices = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === value) {
+            indices.push(i);
+        }
+    }
+    return indices;
+}
+console.log(linearSearchAll([1, 2, 3, 4, 5, 3], 3));
+console.log(linearSearchAll([1, 2, 3, 4, 5], 6)); 
+// end of challenge 13
+
 
 
 //node milestone_2_challenges.js
