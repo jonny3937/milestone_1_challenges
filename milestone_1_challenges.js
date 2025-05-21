@@ -96,9 +96,9 @@ function calculateBMI(weight, height) {
     }
     return `Your BMI is ${bmi.toFixed(2)} ${category}.`;
 }
-console.log(calculateBMI(85, 1.8));  //Your BMI is 26.23 Overweight.
-console.log(calculateBMI(70, 1.75)); //Your BMI is 22.86 Normal weight.
-console.log(calculateBMI(50, 1));    //Your BMI is 50.00 Obese.
+console.log(calculateBMI(85, 1.8));  //BMI is 26.23 Overweight.
+console.log(calculateBMI(70, 1.75)); //BMI is 22.86 Normal weight.
+console.log(calculateBMI(50, 1));    //BMI is 50.00 Obese.
 // end of challenge 7
 
 
